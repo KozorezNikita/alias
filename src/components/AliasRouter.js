@@ -1,10 +1,6 @@
 import { useContext } from "react";
 import {
-  
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+  Switch, Route, Redirect } from "react-router-dom";
 import { AliasContext } from "./AliasProvider";
 import { aliasRoutes } from "../router/router";
 
