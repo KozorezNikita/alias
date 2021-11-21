@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./styles/App.css";
 import AliasProvider from "./components/AliasProvider";
 import AliasRouter from "./components/AliasRouter";
@@ -7,9 +7,9 @@ import AliasRouter from "./components/AliasRouter";
 function App() {
   return (
     <AliasProvider>
-      <HashRouter>
+      <BrowserRouter>
         <AliasRouter />
-      </HashRouter>
+      </BrowserRouter>
     </AliasProvider>
   );
 }
