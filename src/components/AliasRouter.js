@@ -7,7 +7,8 @@ import { aliasRoutes } from "../router/router";
 function AliasRouter() {
   const { theme } = useContext(AliasContext);
   return (
-    
+    <div className="alias" style={{ backgroundColor: theme }}>
+      <h1>ALIAS</h1>
       <Switch>
         {aliasRoutes.map((route) => (
           <Route
@@ -19,7 +20,7 @@ function AliasRouter() {
         ))}
         <Redirect to="Menu" />
       </Switch>
-    
+    </div>
   );
 }
 
