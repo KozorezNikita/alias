@@ -1,36 +1,4 @@
-import { useContext } from "react";
-import {
-  
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
-import { AliasContext } from "./AliasProvider";
-import { aliasRoutes } from "../router/router";
 
-function AliasRouter() {
-  const { theme } = useContext(AliasContext);
-  return (
-    <div className="alias" style={{ backgroundColor: theme }}>
-      <h1>ALIAS</h1>
-      <Switch>
-        {aliasRoutes.map((route) => (
-          <Route
-            path={route.path}
-            component={route.component}
-            exact={route.exact}
-            key={route.path}
-          />
-        ))}
-        <Redirect to="Menu" />
-      </Switch>
-    </div>
-  );
-}
-
-export default AliasRouter;
-
-/*
 
 import {useContext} from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
@@ -83,4 +51,4 @@ function AliasRouter() {
 }
 
 export default AliasRouter;
-*/
+
