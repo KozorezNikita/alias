@@ -18,7 +18,7 @@ function AliasRouter() {
             key={route.path}
           />
         ))}
-        <Redirect to="Menu" />
+        <Redirect to="Alias" />
       </Switch>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Menu() {
+function Alias() {
   return (
     <div className="menu">
       <Link to="/Start">Start</Link>
@@ -11,4 +11,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Alias;
