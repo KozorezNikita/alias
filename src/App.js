@@ -7,7 +7,7 @@ import AliasRouter from "./components/AliasRouter";
 function App() {
   return (
     <AliasProvider>
-      <HashRouter>
+      <HashRouter basename="/">
         <AliasRouter />
       </HashRouter>
     </AliasProvider>
